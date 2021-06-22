@@ -1,62 +1,58 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<p align="center"><a href="https://increnta.com/tecnologia/" target="_blank"><img src="https://sso.magickhub.com/assets/images/logo_dark.png" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+
+
+<p align="center"> <p align="center"> Prueba Técnica Magick
+    <br> 
 </p>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## About:
+Realización de una prueba técnica para el desarrollo de una API Rest en Laravel siguiendo las buenas prácticas en la implementación del código.
+La API se basará en el modelo de datos.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## ⛏️ Built With <a name = "built"></a>
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- [Laravel](https://laravel.com/) - ORM
+- [PHP](https://www.php.net/) - Hypertext Preprocessor
+- [Postman](https://learning.postman.com/docs/getting-started/introduction/) - Server Environment
+- [Docker](https://docs.docker.com/) - Server Deployment
+- [MySql](https://www.mysql.com/) - Database
+- [Workbench](https://www.mysql.com/products/workbench/) - Database
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+###  🎈  Start Project <a name="start-project"></a>
 
-## Laravel Sponsors
+Para hacer funcionar la prueba técnica, primero de todo, en el terminal del VSC hay que poner los siguientes comandos:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- sh docker-run.sh
+- php artisan serve
 
-### Premium Partners
+Luego tendremos que crear una base de datos con el nombre de magick y un password 1234.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
+Cuando ya tengamos la BBDD corriendo, ya podemos empezar a crear users y posts.
 
-## Contributing
+Con esta API Rest se puede crear, loguear, logout, modificar, borrar y mostrar todos los users. Además de crear, modificar, borrar y mostrar todos los posts.
+Siempre que el user tenga algun post vinculado no se podrá borrar el user.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## DB diagram 🗃️
 
-## Code of Conduct
+En esta imagen se muestra la relación entre tablas:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+![DB](https://i.imgur.com/Dt4Lwf1.png)
 
-## Security Vulnerabilities
+## CRUD with Postman ![postman](https://i.imgur.com/cXur21z.png)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/f41154fc76331a0eab73?action=collection%2Fimport)
 
-## License
+## Author 🧐
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- [@Carlos-Val](https://github.com/Carlos-Val) -  Initial development work
+
+
+## 📝 License
+
+The Laravel framework es un software de código abierto con licencia [MIT license](https://opensource.org/licenses/MIT).
+    <br> 
+</p>
