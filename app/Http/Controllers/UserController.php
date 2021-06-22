@@ -9,6 +9,17 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+    // Buscamos todos los usuarios
+
+    public function allUsers(){
+
+        try{
+            return User::all();
+
+        }catch(QueryException $error){
+            return $error;
+        }
+    }
     //Registro un nuevo User
 
     public function registerUser(Request $request){
@@ -133,5 +144,29 @@ class UserController extends Controller
         } catch(QueryException $error) {
              return $error;
         }
+    }
+
+    // Borramos user
+
+    public function deleteUser($id) {
+
+        $member = User::find($id);
+        
+        if($member) {
+            try {
+
+                return $member -> delete();
+
+            }catch (QueryException $error) {
+
+                return $error;
+            }
+        } else {
+            return response() -> json([
+                'success' => false,
+                'message' => 'El usuario no se puede borrar'
+            ], 1000);
+        }
+
     }
 }
