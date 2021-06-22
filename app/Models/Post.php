@@ -5,19 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Post extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'name',
-        'age', 
-        'password', 
-        'token'
+        'title', 
+        'iduser',
+        
     ];
 
-    public function userOrder() {
-
-        return $this -> hasMany('App\Models\Post', 'iduser');
+    public function postUser() {
+        return $this -> belongsTo('App\Models\User', 'iduser', 'id');
     }
 }
